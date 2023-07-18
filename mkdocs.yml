@@ -1,0 +1,88 @@
+site_name: L u c y
+theme:
+  name: "material"
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+  logo: "images/lucycircle.png"
+  custom_dir: docs/overrides
+  favicon: "images/favicon.ico"
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      accent: "orange"
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      accent: "yellow"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home:
+    - README.md
+    - Basic bot setup: SUMMARY.md
+    - FAQs: ./commands/installation.md
+  - Commands:
+    - Admin: ./commands/admin.md
+    - Anime: ./commands/anime.md
+    - Economy: ./commands/economy.md
+    - Fun: ./commands/fun.md
+    - Giveaways: ./commands/giveaways.md
+    - Images: ./commands/image.md
+    - Information: ./commands/information.md
+    - Invites: ./commands/invites.md
+    - Moderation: ./commands/moderation.md
+    - Music: ./commands/music.md
+    - Owner: ./commands/owner.md
+    - social: ./commands/social.md
+    - stats: ./commands/stats.md
+    - utility: ./commands/utility.md
+  - Donate:
+    - ./donation.md
+
+extra:
+  social:
+    - icon: "fontawesome/solid/globe"
+      link: "https://halucy.hop.sh/"
+      name: Lucy website website
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/Hai-Lucy/mkdocs-lucy"
+      name: Github repository
+    - icon: "fontawesome/brands/discord"
+      link: "https://halucy.hop.sh/support"
+      name: Support Server
+  # generator: false # to remove MkDocs footer
+
+repo_name: "lucy-docs"
+repo_url: "https://github.com/Hai-Lucy/mkdocs-lucy"
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - md_in_html
+  - attr_list
+  - footnotes
+  - meta
+  - def_list
+
+extra_css:
+  - overrides/stylesheets/extra.css
+
+plugins:
+  - search:
+      separator: '[\s\-\.\_]'
+
+copyright: "Copyright &copy; 2023 Lucy"
